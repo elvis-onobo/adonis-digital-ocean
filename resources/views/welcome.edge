@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello Adonis Uploads</title>
+	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.693.0.min.js"></script>
+	{{ style('style') }}
+</head>
+<body>
+	<div style="margin-top: 5em; margin-left: 5em">
+	<h1>Upload a File</h1>
+	<form method="POST" action="/upload" enctype="multipart/form-data">
+		{{ csrfField() }}
+		<input type="file" name="file" style="" />
+		<button type="submit"> Submit </button>
+	</form>
+</div>
+</body>
+</html>
